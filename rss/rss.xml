@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/rss.xml1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[mnml, a ghost blog theme]]></title><description><![CDATA[Responsive,  Minimal, Free, and Open Source]]></description><link>http://mnml.herokuapp.com/</link><generator>Ghost 0.11</generator><lastBuildDate>Thu, 06 Oct 2022 01:04:55 GMT</lastBuildDate><atom:link href="http://mnml.herokuapp.com/rss/rss.xml" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Typesetting Mathematics on your Blog]]></title><description><![CDATA[<p>In the third version of the MNML theme, I added the ability to use mathematics in your blog posts. </p>
+
+<p>The math is typeset using Khan Academy’s <a href="http://khan.github.io/KaTeX/">KaTeX</a> library, which claims to be <em>the fastest math typesetting library for the web</em>. Additionally, the MNML theme only loads KaTeX if it</p>]]></description><link>http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/</link><guid isPermaLink="false">ba97981b-e53a-4293-9c32-0011f8096e13</guid><category><![CDATA[ghost]]></category><category><![CDATA[math]]></category><category><![CDATA[latex]]></category><category><![CDATA[katex]]></category><category><![CDATA[tex]]></category><dc:creator><![CDATA[Curiositry]]></dc:creator><pubDate>Thu, 05 Sep 2019 02:42:00 GMT</pubDate><media:content url="https://katex.org/img/og_logo.png" medium="image"/><content:encoded><![CDATA[<img src="https://katex.org/img/og_logo.png" alt="Typesetting Mathematics on your Blog"><p>In the third version of the MNML theme, I added the ability to use mathematics in your blog posts. </p>
+
+<p>The math is typeset using Khan Academy’s <a href="http://khan.github.io/KaTeX/">KaTeX</a> library, which claims to be <em>the fastest math typesetting library for the web</em>. Additionally, the MNML theme only loads KaTeX if it detects mathematics on the page that need to be rendered. Here’s how you can start using math in your posts.</p>
+
+<p><img src="https://katex.org/img/og_logo.png" alt="Typesetting Mathematics on your Blog"></p>
+
+<h3 id="thetexmathtypesettingstandard">The TeX Math Typesetting Standard</h3>
+
+<p>KaTeX typesets math using the <a href="http://en.wikipedia.org/wiki/TeX">TeX</a> syntax. TeX is a typesetting that was created by Donald Knuth <em>36 years ago</em>. However, it is still widely used, and it has been noted as “… one of the most sophisticated digital typographical systems in the world.” <sup><a href="http://iclass.iuea.ac.ug/intranet/E-books/ICT-COLLECTION/Other/O%27Reilly%20Fonts%20&amp;%20Encodings.pdf">1</a></sup></p>
+
+<p>TeX is popular in academia, especially in mathematics, as well as computer science,  engineering, physics, and other disiplines.</p>
+
+<p>Including KaTeX in the mnml theme will allow the scientifically inclined to typeset math in the way they are used to, but from the comfort of their own blog.</p>
+
+<p>If you’re not familiar with Tex, but would like to use math on your blog, take a look at this handy <a href="http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/refcards.com/docs/silvermanj/tex/tex-refcard-a4.pdf">cheatsheet (.pdf)</a></p>
+
+<h3 id="thesyntax">The Syntax</h3>
+
+<p>To use Tex math on your blog, use the following syntax:</p>
+
+<pre><code class="language-html">&lt;section class="math"&gt;TEX EQUATION HERE&lt;/section&gt;  
+</code></pre>
+
+<p>KaTeX will look for any element with the class <code>math</code>, and typeset its contents. I <strong>highly recommend</strong> using the <code>&lt;section&gt;</code> element for your math, as it formats correctly. If you use non-block-level elements, like spans, Ghost will convert your math to Markdown <em>before</em> KaTeX typesets it, which causes all kind of problems. (Example: Tex subscript will be parsed as Markdown italics).</p>
+
+<p>Thus, this expression:  </p>
+
+<pre><code>&lt;section class="math"&gt; \pi = {c \over d}&lt;/section&gt;  
+</code></pre>
+
+<p>… will be rendered by KaTeX like this:</p>
+
+<section class="math">\pi = {c \over d}</section>
+
+<p>Looks mighty fine. What about something more complicated? Try the forumla for standard deviation:</p>
+
+<section class="math">  
+s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2}  
+</section>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>That’s it! The Mnml theme makes it easy for scientists to expound their knowledge … beautifully. </p>
+
+<p>If you don’t plan on using math on your blog, you can disable KaTeX by changing <code>{{&gt;katex}}</code> to <code>{{!&gt;katex}}</code> on line 60 of <code>default.hbs</code>, but since it’s loaded conditionally, you don’t really need to. </p>
+
+<p>Let’s finish of with <a href="http://automathic.org/151_uncertainty-relation">Heisenbergs uncertainty relation</a>:</p>
+
+<section class="math">  
+\Delta p \Delta x \geq {h \over 4 \pi}
+</section>]]></content:encoded></item><item><title><![CDATA[Getting Started with Mnml]]></title><description><![CDATA[A brief tutorial on installing and configuring MNML — a free, minimal, responsive ghost blog theme with great typography.]]></description><link>http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/</link><guid isPermaLink="false">c7553d41-2815-4012-90a1-dfa1559ad8ad</guid><category><![CDATA[ghost]]></category><category><![CDATA[mnml]]></category><category><![CDATA[theme]]></category><dc:creator><![CDATA[Curiositry]]></dc:creator><pubDate>Mon, 03 Nov 2014 01:54:26 GMT</pubDate><media:content url="https://cdn.autodidacts.io/img/mnml/github.png" medium="image"/><content:encoded><![CDATA[<img src="https://cdn.autodidacts.io/img/mnml/github.png" alt="Getting Started with Mnml"><p>Having seen the mnml theme shine on this site  (and <a href="http://autodidacts.io">others</a> ), and thus become aware of its excellence, the next logical step is to install it on your own blog.</p>
+
+<p>MNML is installed in the same way as any other Ghost theme, but there are a few options to configure if you’re going to use some of the more advanced features.</p>
+
+<h2 id="downloadspanclassampstylefontweightnormalampspaninstall">Download <span class="amp" style="font-weight:normal;">&amp;</span> Install</h2>
+
+<p>First, download the latest verion of the theme from github. If you like the command line, you can do that with:  </p>
+
+<pre><code>git clone https://github.com/curiositry/mnml-ghost-theme  
+</code></pre>
+
+<p>Or, you can download the latest version as a .zip file if you prefer (this is the way to go if you’re using Ghost(Pro) hosting):  </p>
+
+<div>  
+<a class="btn" href="https://github.com/curiositry/mnml-ghost-theme/archive/master.zip">Download</a>  
+</div>
+
+<p>Assuming you have <a href="http://support.ghost.org/installation/">installed</a> the <a href="http://ghost.org">Ghost</a> blogging platform, and have somewhere to <a href="http://support.ghost.org/deploying-ghost/">host</a> it, using the mnml theme is very simple. </p>
+
+<aside>  
+If the official installation instructions didn’t help, check out <a href="http://howtoinstallghost.com">howtoinstallghost.com</a>  
+</aside>
+
+<p>Just follow the guide for your chosen method of installation, either <a href="http://support.ghost.org/upload-theme-ghostpro">this guide</a> for Ghost(Pro) or, or follow the instructions for <a href="http://support.ghost.org/switch-themes/">switching themes</a> if you’re hosting your blog elsewhere.</p>
+
+<h2 id="configurecommentsspanclassampstylefontweightnormalampspanmenu">Configure Comments <span class="amp" style="font-weight:normal;">&amp;</span> Menu</h2>
+
+<p>Your blog is ready to go! That’s all you need to do for mnml to look great and perform wonderfully. However, if you want configure comments on your posts, or a menu for other pages, read on.</p>
+
+<h4 id="comments">Comments</h4>
+
+<p>The mnml theme supports comments, and it’s easy to set up. Mnml uses the Disqus commenting platform: if you want comments on you blog, here’s what to do.</p>
+
+<ul>
+<li>Sign up for a <a href="http://disqus.com">Disqus</a> account (it’s free)</li>
+<li>Click <em>Add Disqus to Your Site</em>, and choose a “shortname”</li>
+<li>Open <code>partials/comment.hbs</code> and change the <code>disqus_shortname</code> variable (on line 13) to be the shortname you picked.</li>
+<li>On line 78 of <code>post.hbs</code>, replace <code>{{!&gt;comments}}</code> with <code>{[&gt;comments}}</code> to include the comments partial you just edited.</li>
+</ul>
+
+<p>I recommend changing the comment count text, which can be found on disqus.com under the setting tab on the admin page for your new shortname to look like <a href="http://drp.io/ghe">this</a>.</p>
+
+<h4 id="menu">Menu</h4>
+
+<figure class="thumb">  
+<img src="http://cdn.autodidacts.io/img/mnml/menu-open.png" alt="Getting Started with Mnml">  
+<figcaption><small>MNML  with menu open</small></figcaption>  
+</figure>  
+
+<div></div>  
+
+<p>Mnml also supports a menu, where you can link to static pages or anything else you like. By default, menu.hbs has links to the homepage, <code>/about</code>, and <code>/contact</code>. Here’s how to set it up.</p>
+
+<ul>
+<li>Update the links in <code>partials/menu.hbs</code>to what ever you want, or just create two static posts, one with the slug <code>contact</code>, and the other <code>about</code>, which are the default links in the menu.</li>
+<li>Uncomment the partial: replace <code>{{!&gt;menu}}</code> with <code>{{&gt;menu}}</code>, on line 54 of <code>default.hbs</code></li>
+</ul>]]></content:encoded></item><item><title><![CDATA[Mnml Version 2 Is Here!]]></title><description><![CDATA[<p>Version two of the MNML Ghost theme is out — completely redesigned and better than ever! It has moved from being a better default theme, a replacement for Casper, to having a unique look of its own. Wondering what it looks like? This blog is using the mnml theme.</p>
+
+<h3 id="typography">Typography</h3>
+
+<blockquote class="pull">  
+MNML</blockquote>]]></description><link>http://mnml.herokuapp.com/mnml-ghost-theme-version-2/</link><guid isPermaLink="false">7263ade4-9d13-4264-9d30-484d345141ef</guid><category><![CDATA[ghost]]></category><category><![CDATA[mnml]]></category><category><![CDATA[v2]]></category><dc:creator><![CDATA[Curiositry]]></dc:creator><pubDate>Fri, 10 Oct 2014 05:33:00 GMT</pubDate><media:content url="https://cdn.autodidacts.io/img/mnml/mnml-v2.png" medium="image"/><content:encoded><![CDATA[<img src="https://cdn.autodidacts.io/img/mnml/mnml-v2.png" alt="Mnml Version 2 Is Here!"><p>Version two of the MNML Ghost theme is out — completely redesigned and better than ever! It has moved from being a better default theme, a replacement for Casper, to having a unique look of its own. Wondering what it looks like? This blog is using the mnml theme.</p>
+
+<h3 id="typography">Typography</h3>
+
+<blockquote class="pull">  
+MNML has a `.pull` class … to highlight the brilliance of a particular phrase you wrote and annoy all your readers.  
+</blockquote>
+
+<p>MNML has had a typographic overhaul. It is now typeset in Source Serif Pro &amp; Source Sans Pro, with a touch of Alegreya. Source Serif and Sans make an excellent pair—readable and unaffected, but with a certain quiet class. All typefaces are served—at blazing speeds—by <a href="http://brick.im">Brick</a>.</p>
+
+<h3 id="helpers">Helpers</h3>
+
+<p>MNML Includes a <code>.thumb</code> class for using thumbnail size images — sometimes you don’t need an image to fill the screen. See it at right. </p>
+
+<p>MNML has a <code>.pull</code> class for … classy pullquotes! Just tack it onto a blockquote when you want to highlight the brilliance of a particular phrase you wrote and annoy all your readers.</p>
+
+<aside class="note">  
+<strong>Hey there!</strong> I’m here to distract you from what your reading by providing even <em>more</em> value!  
+</aside>
+
+<p>Sometimes you need to explain something or digress outside of the main text; for that use the <code>&lt;aside&gt;</code> tag which MNML floats out of the way to the right. If you’re talking about something in the main text, use <code>&lt;aside&gt;</code> with the <code>.note</code> class — yeah, talk about semantics.</p>
+
+<p>There are a handful of other helpers, too, that are there if you need them: <code>.sc</code> for small caps (which Source Serif Pro doesn’t have yet), <code>.center-text</code> to, ah, center text, and <code>m0a</code> for <code>margin: 0 auto;</code>.</p>
+
+<h3 id="syntaxhighlighting">Syntax Highlighting</h3>
+
+<p>Prism is used for syntax highlighting. A code block with the language specified will be automatically highlighted, so:</p>
+
+<pre><code>```language-javascript
+function factorial(n) {
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+```
+</code></pre>
+
+<p>becomes…  </p>
+
+<pre><code class="language-javascript">function factorial(n) {  
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+</code></pre>
+
+<h3 id="getit">Get it!</h3>
+
+<p>MNML has countless other features <span class="amp">&amp;</span> benefits. I’d say it’s time to stop drooling and start the download:</p>
+
+<p></p>  
+
+<div class="center-text">  
+<a class="btn" href="https://github.com/curiositry/mnml-ghost-theme/archive/master.zip">Download Latest Version</a>  
+</div>
+
+<p>Alternately, you can clone it straight into your themes directory with:</p>
+
+<pre><code>git clone https://github.com/curiositry/mnml-ghost-theme.git  
+</code></pre>]]></content:encoded></item><item><title><![CDATA[Introducing MNML, a Ghost theme]]></title><description><![CDATA[<p>This is a the demo site for <a href="http://github.com/omphalosskeptic/mnml-ghost-theme">mnml</a> —  a better default Ghost theme. mnml is typographically tasteful, functional, and responsive. Casper is good, but minimal adds a touch of class.</p>
+
+<h4 id="salientfeatures">Salient features:</h4>
+
+<ul>
+<li>Everything that makes Casper great, plus…</li>
+<li>Prism.js syntax highlighting</li>
+<li>The wonderful Fira font family, to set you</li></ul>]]></description><link>http://mnml.herokuapp.com/introducing-the-mnml-ghost-theme/</link><guid isPermaLink="false">8b153ac6-5ae2-4ab5-ae54-4f7bac4a1b90</guid><category><![CDATA[mnml]]></category><category><![CDATA[ghost]]></category><dc:creator><![CDATA[Curiositry]]></dc:creator><pubDate>Mon, 01 Sep 2014 13:56:21 GMT</pubDate><media:content url="https://cdn.autodidacts.io/img/mnml/mnml%20responsive%20crop.png" medium="image"/><content:encoded><![CDATA[<img src="https://cdn.autodidacts.io/img/mnml/mnml%20responsive%20crop.png" alt="Introducing MNML, a Ghost theme"><p>This is a the demo site for <a href="http://github.com/omphalosskeptic/mnml-ghost-theme">mnml</a> —  a better default Ghost theme. mnml is typographically tasteful, functional, and responsive. Casper is good, but minimal adds a touch of class.</p>
+
+<h4 id="salientfeatures">Salient features:</h4>
+
+<ul>
+<li>Everything that makes Casper great, plus…</li>
+<li>Prism.js syntax highlighting</li>
+<li>The wonderful Fira font family, to set you apart from the masses</li>
+<li>An awesome pullquote style (just add the <code>.pull</code> class to a blockquote</li>
+<li>Better horozontal rules</li>
+<li>Drop-capitals, and small capitals for the first line</li>
+</ul>
+
+<h4 id="screenshots">Screenshots</h4>
+
+<h2 id="imgsrchttpiminuscomivvuj1tqtucb5pngaltdropcaps"><img src="http://i.minus.com/iVvuj1TqTUCB5.png" alt="Introducing MNML, a Ghost theme"></h2>
+
+<p><img src="http://i.minus.com/ibcjr0kh3U4lYM.png" alt="Introducing MNML, a Ghost theme"></p>
+
+<h4 id="download">Download</h4>
+
+<p>If you like what you see, you can get mnml on your Ghost blog. </p>
+
+<p><a class="btn" href="http://github.com/omphalosskeptic/mnml-ghost-theme/archive/master.zip">Download .zip</a></p>
+
+<p>or use git:</p>
+
+<pre><code>git clone https://github.com/omphalosskeptic/mnml-ghost-theme.git
+</code></pre>]]></content:encoded></item><item><title><![CDATA[Welcome to Ghost]]></title><description><![CDATA[<p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at <code>&lt;your blog URL&gt;/ghost/</code>. When you arrive, you can select this post from a list</p>]]></description><link>http://mnml.herokuapp.com/welcome-to-ghost/</link><guid isPermaLink="false">19dc9aac-e2e6-4485-8b12-c0e5c63819e6</guid><category><![CDATA[Getting Started]]></category><dc:creator><![CDATA[Curiositry]]></dc:creator><pubDate>Sun, 31 Aug 2014 01:13:12 GMT</pubDate><media:content url="https://colorlib.com/wp/wp-content/uploads/sites/2/ghost-logo.png" medium="image"/><content:encoded><![CDATA[<img src="https://colorlib.com/wp/wp-content/uploads/sites/2/ghost-logo.png" alt="Welcome to Ghost"><p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at <code>&lt;your blog URL&gt;/ghost/</code>. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!</p>
+
+<h2 id="gettingstarted">Getting Started</h2>
+
+<p>Ghost uses something called Markdown for writing. Essentially, it's a shorthand way to manage your post formatting as you write!</p>
+
+<p>Writing in Markdown is really easy. In the left hand panel of Ghost, you simply write as you normally would. Where appropriate, you can use <em>shortcuts</em> to <strong>style</strong> your content. For example, a list:</p>
+
+<ul>
+<li>Item number one</li>
+<li>Item number two
+<ul><li>A nested item</li></ul></li>
+<li>A final item</li>
+</ul>
+
+<p>or with numbers!</p>
+
+<ol>
+<li>Remember to buy some milk  </li>
+<li>Drink the milk  </li>
+<li>Tweet that I remembered to buy the milk, and drank it</li>
+</ol>
+
+<h3 id="links">Links</h3>
+
+<p>Want to link to a source? No problem. If you paste in url, like <a href="http://ghost.org">http://ghost.org</a> - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to <a href="http://ghost.org">the Ghost website</a>. Neat.</p>
+
+<h3 id="whataboutimages">What about Images?</h3>
+
+<p>Images work too! Already know the URL of the image you want to include in your article? Simply paste it in like this to make it show up:</p>
+
+<p><img src="https://ghost.org/images/ghost.png" alt="Welcome to Ghost"></p>
+
+<p>Not sure which image you want to use yet? That's ok too. Leave yourself a descriptive placeholder and keep writing. Come back later and drag and drop the image in to upload:</p>
+
+<h3 id="quoting">Quoting</h3>
+
+<p>Sometimes a link isn't enough, you want to quote someone on what they've said. It was probably very wisdomous. Is wisdomous a word? Find out in a future release when we introduce spellcheck! For now - it's definitely a word.</p>
+
+<blockquote>
+  <p>Wisdomous - it's definitely a word.</p>
+</blockquote>
+
+<h3 id="workingwithcode">Working with Code</h3>
+
+<p>Got a streak of geek? We've got you covered there, too. You can write inline <code>&lt;code&gt;</code> blocks really easily with back ticks. Want to show off something more comprehensive? 4 spaces of indentation gets you there.</p>
+
+<pre><code>.awesome-thing {
+    display: block;
+    width: 100%;
+}
+</code></pre>
+
+<h3 id="readyforabreak">Ready for a Break?</h3>
+
+<p>Throw 3 or more dashes down on any new line and you've got yourself a fancy new divider. Aw yeah.</p>
+
+<hr>
+
+<h3 id="advancedusage">Advanced Usage</h3>
+
+<p>There's one fantastic secret about Markdown. If you want, you can  write plain old HTML and it'll still work! Very flexible.</p>
+
+<p><input type="text" placeholder="I'm an input field!"></p>
+
+<p>That should be enough to get you started. Have fun - and let us know what you think :)</p>]]></content:encoded></item></channel></rss>

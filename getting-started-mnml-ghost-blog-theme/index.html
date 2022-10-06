@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Getting Started with Mnml, a free + responsive Ghost Blog Theme — mnml, a ghost blog theme</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=f34d8c5386" />
+
+<!-- For speed, I’ve added the response from this link straight into defer.css-->
+<!--<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Serif+Pro:400,700/Source+Sans+Pro:400,900,400i,900i/Alegreya:400i,700i">-->
+
+    <link rel="canonical" href="http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/amp/" />
+    
+    <meta property="og:site_name" content="mnml, a ghost blog theme" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Getting Started with Mnml, a free + responsive Ghost Blog Theme" />
+    <meta property="og:description" content="A brief tutorial on installing and configuring MNML — a free, minimal, responsive ghost blog theme with great typography." />
+    <meta property="og:url" content="http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/" />
+    <meta property="og:image" content="https://cdn.autodidacts.io/img/mnml/github.png" />
+    <meta property="article:published_time" content="2014-11-03T01:54:26.000Z" />
+    <meta property="article:modified_time" content="2017-11-19T06:17:56.000Z" />
+    <meta property="article:tag" content="ghost" />
+    <meta property="article:tag" content="mnml" />
+    <meta property="article:tag" content="theme" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Getting Started with Mnml, a free + responsive Ghost Blog Theme" />
+    <meta name="twitter:description" content="A brief tutorial on installing and configuring MNML — a free, minimal, responsive ghost blog theme with great typography." />
+    <meta name="twitter:url" content="http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/" />
+    <meta name="twitter:image" content="https://cdn.autodidacts.io/img/mnml/github.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Curiositry" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="ghost, mnml, theme" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "mnml, a ghost blog theme",
+        "logo": "http://mnml.herokuapp.com/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Curiositry",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://cdn.autodidacts.io/img/gravatar.png",
+            "width": 500,
+            "height": 500
+        },
+        "url": "http://mnml.herokuapp.com/author/curiositry/",
+        "sameAs": [
+            "http://curiositry.github.io"
+        ],
+        "description": "An autodidact who crafts code + content for the web."
+    },
+    "headline": "Getting Started with Mnml, a free + responsive Ghost Blog Theme",
+    "url": "http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/",
+    "datePublished": "2014-11-03T01:54:26.000Z",
+    "dateModified": "2017-11-19T06:17:56.000Z",
+    "image": "https://cdn.autodidacts.io/img/mnml/github.png",
+    "keywords": "ghost, mnml, theme",
+    "description": "A brief tutorial on installing and configuring MNML — a free, minimal, responsive ghost blog theme with great typography.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://mnml.herokuapp.com"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.11" />
+    <link rel="alternate" type="application/rss+xml" title="mnml, a ghost blog theme" href="http://mnml.herokuapp.com/rss/rss.xml" />
+    <style>
+
+</style>
+</head>
+<body class="post-template tag-ghost-tag tag-mnml tag-theme" id="body">
+
+    
+
+<div class="main-header--content main-nav--content clearfix">
+  <a href="http://mnml.herokuapp.com">
+    <h3><span class="back-arrow">← </span>mnml, a ghost blog theme</h3>
+  </a>
+</div>
+
+<main class="content">
+
+    <article class="post tag-ghost-tag tag-mnml tag-theme">
+
+        <header class="post-header">
+            <h1 class="post-title typl8-gamma">Getting Started with Mnml</h1>
+            <section class="post-meta">
+                By <a href="/author/curiositry/">Curiositry</a>
+                <time class="post-date" datetime="2014-11-03"> Nov 3rd 2014</time>
+                <span class="post-tags">Tags: <a href="/tag/ghost-tag/">ghost</a>, <a href="/tag/mnml/">mnml</a>, <a href="/tag/theme/">theme</a></span>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Having seen the mnml theme shine on this site  (and <a href="http://autodidacts.io">others</a> ), and thus become aware of its excellence, the next logical step is to install it on your own blog.</p>
+
+<p>MNML is installed in the same way as any other Ghost theme, but there are a few options to configure if you’re going to use some of the more advanced features.</p>
+
+<h2 id="downloadspanclassampstylefontweightnormalampspaninstall">Download <span class="amp" style="font-weight:normal;">&amp;</span> Install</h2>
+
+<p>First, download the latest verion of the theme from github. If you like the command line, you can do that with:  </p>
+
+<pre><code>git clone https://github.com/curiositry/mnml-ghost-theme  
+</code></pre>
+
+<p>Or, you can download the latest version as a .zip file if you prefer (this is the way to go if you’re using Ghost(Pro) hosting):  </p>
+
+<div>  
+<a class="btn" href="https://github.com/curiositry/mnml-ghost-theme/archive/master.zip">Download</a>  
+</div>
+
+<p>Assuming you have <a href="http://support.ghost.org/installation/">installed</a> the <a href="http://ghost.org">Ghost</a> blogging platform, and have somewhere to <a href="http://support.ghost.org/deploying-ghost/">host</a> it, using the mnml theme is very simple. </p>
+
+<aside>  
+If the official installation instructions didn’t help, check out <a href="http://howtoinstallghost.com">howtoinstallghost.com</a>  
+</aside>
+
+<p>Just follow the guide for your chosen method of installation, either <a href="http://support.ghost.org/upload-theme-ghostpro">this guide</a> for Ghost(Pro) or, or follow the instructions for <a href="http://support.ghost.org/switch-themes/">switching themes</a> if you’re hosting your blog elsewhere.</p>
+
+<h2 id="configurecommentsspanclassampstylefontweightnormalampspanmenu">Configure Comments <span class="amp" style="font-weight:normal;">&amp;</span> Menu</h2>
+
+<p>Your blog is ready to go! That’s all you need to do for mnml to look great and perform wonderfully. However, if you want configure comments on your posts, or a menu for other pages, read on.</p>
+
+<h4 id="comments">Comments</h4>
+
+<p>The mnml theme supports comments, and it’s easy to set up. Mnml uses the Disqus commenting platform: if you want comments on you blog, here’s what to do.</p>
+
+<ul>
+<li>Sign up for a <a href="http://disqus.com">Disqus</a> account (it’s free)</li>
+<li>Click <em>Add Disqus to Your Site</em>, and choose a “shortname”</li>
+<li>Open <code>partials/comment.hbs</code> and change the <code>disqus_shortname</code> variable (on line 13) to be the shortname you picked.</li>
+<li>On line 78 of <code>post.hbs</code>, replace <code>{{!&gt;comments}}</code> with <code>{[&gt;comments}}</code> to include the comments partial you just edited.</li>
+</ul>
+
+<p>I recommend changing the comment count text, which can be found on disqus.com under the setting tab on the admin page for your new shortname to look like <a href="http://drp.io/ghe">this</a>.</p>
+
+<h4 id="menu">Menu</h4>
+
+<figure class="thumb">  
+<img src="http://cdn.autodidacts.io/img/mnml/menu-open.png" alt="MNML screenshot">  
+<figcaption><small>MNML  with menu open</small></figcaption>  
+</figure>  
+
+<div></div>  
+
+<p>Mnml also supports a menu, where you can link to static pages or anything else you like. By default, menu.hbs has links to the homepage, <code>/about</code>, and <code>/contact</code>. Here’s how to set it up.</p>
+
+<ul>
+<li>Update the links in <code>partials/menu.hbs</code>to what ever you want, or just create two static posts, one with the slug <code>contact</code>, and the other <code>about</code>, which are the default links in the menu.</li>
+<li>Uncomment the partial: replace <code>{{!&gt;menu}}</code> with <code>{{&gt;menu}}</code>, on line 54 of <code>default.hbs</code></li>
+</ul>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="/author/curiositry/" style="background-image: url(http://cdn.autodidacts.io/img/gravatar.png)"><span class="hidden">Curiositry's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="/author/curiositry/">Curiositry</a></h4>
+
+                    <p>An autodidact who crafts code + content for the web.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Canada</span>
+                    <span class="author-link icon-link"><a href="http://curiositry.github.io">http://curiositry.github.io</a></span>
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Getting%20Started%20with%20Mnml&amp;url=http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://mnml.herokuapp.com/getting-started-mnml-ghost-blog-theme/"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+    <!--
+    If you want Disqus comments, uncomment this. Make sure to set your disqus shortname in partials/comments.hbs first!
+     -->
+    </article>
+</main>
+
+
+    <footer class="site-footer">
+  <a class="rss-icon icon-feed" href="http://mnml.herokuapp.com/rss/rss.xml">
+   <span class="tooltip sans-serif">Subscribe!</span>
+  </a>
+<!--  Uncomment if you want a copy of your navigation in the footer. It’s pretty cool, and gives your visitors something to do when they finish an article other than commenting, sharing, or closing the tab.    -->
+  <nav>
+    <ul class="nav">
+    <li class="nav-home" role="presentation">
+      <a href="http://mnml.herokuapp.com/">Home</a>
+    </li>
+    <li class="nav-about" role="presentation">
+      <a href="http://mnml.herokuapp.com/about/">About</a>
+    </li>
+    <li class="nav-get-the-theme" role="presentation">
+      <a href="http://github.com/curiositry/mnml-ghost-theme">Get the Theme</a>
+    </li>
+    <li class="nav-contact" role="presentation">
+      <a href="http://mnml.herokuapp.com/contact/">Contact</a>
+    </li>
+</ul>
+
+  </nav>
+  <div class="site-footer__attribution">
+    <span class="print-data copyright-notice">
+      &copy; 2022
+      <a href="http://mnml.herokuapp.com/">mnml, a ghost blog theme</a>
+      &nbsp;&bull;&nbsp;
+    </span>
+
+    <span>
+      <a href="http://github.com/curiositry/mnml-ghost-theme">MNML</a>
+      theme by
+      <a href="http://curiositry.github.io">Curiositry</a>
+    </span>
+
+    <span>
+      &nbsp;&bull;&nbsp;
+      Published with
+      <a href="https://ghost.org">
+        &nbsp;<span class="icon-ghost typl8-zeta"></span> Ghost
+      </a>
+    </span>
+  </div>
+</footer>
+
+    <!--
+    This generates a handsome modal menu and hamburger icon. If you want to use it, edit     menu.hbs and add your links (line ~146), then remove the ! from this helper to           activate it.
+    -->
+      <!--
+THE MENU: Enabling this partial creates a hamburger icon that opens a menu. It’s responsive, lightweight, and works with javascript disabled.
+-->
+
+
+<!-- Trigger element, which is hidden -->
+<input type="checkbox" id="menu-trigger" />
+
+<!-- Thus label which control the trigger. The hamburger icon is a background image in      the CSS (base64 encoded svg) in main.css. Hover and close states in defer.css-->
+<label for="menu-trigger" id="open-menu" class="open-menu btn"></label>
+
+<!-- The menu that slides in. Styles in defer.css -->
+<nav class="menu" id="menu">
+  <ul class="nav">
+    <li class="nav-home" role="presentation">
+      <a href="http://mnml.herokuapp.com/">Home</a>
+    </li>
+    <li class="nav-about" role="presentation">
+      <a href="http://mnml.herokuapp.com/about/">About</a>
+    </li>
+    <li class="nav-get-the-theme" role="presentation">
+      <a href="http://github.com/curiositry/mnml-ghost-theme">Get the Theme</a>
+    </li>
+    <li class="nav-contact" role="presentation">
+      <a href="http://mnml.herokuapp.com/contact/">Contact</a>
+    </li>
+</ul>
+
+</nav>
+
+<!--
+This makes the rest of the page move down with the menu for style points, but is              optional. The menu works fine with pure css.
+-->
+<script>
+  var navTrigger = document.getElementById("menu-trigger");
+  var menu = document.getElementById("menu");
+  var bodyTag = document.getElementsByTagName("body")[0];
+
+
+navTrigger.onclick = function () {
+  if(navTrigger.checked){
+    bodyTag.classList.add("menu-transition");
+    document.getElementsByTagName("body")[0].style.marginTop = menu.clientHeight+"px";
+  }else{
+    bodyTag.classList.add("menu-transition");
+    document.getElementsByTagName("body")[0].style.marginTop = "0";
+  }
+}
+</script>
+
+
+    <!-- Ghost outputs important scripts and data with this tag -->
+    <script>
+document.querySelector(".site-footer__attribution a[href='https://ghost.org']").href = "https://ghost.org?via=curiositry";
+document.querySelector(".site-footer__attribution a[href='https://ghost.org?via=curiositry']").outerHTML += "<b>*</b>";
+
+document.querySelector(".site-footer__attribution").innerHTML += "<br><div style='margin-top:2rem;'><b>*</b> affiliate link</div>";
+</script>
+
+    <!--
+    This loads katex.hbs in; if a page has anything with the class .math, katex.hbs           loads Khan Academy’s Tex math typesetting library and runs it on the content.
+
+    If you don’t want to use KaTeX, comment this out.
+    -->
+    <script type="text/javascript">
+var mathAreas = document.getElementsByClassName("math");
+if (mathAreas){
+  var ss = document.createElement("link");
+  ss.type = "text/css";
+  ss.rel = "stylesheet";
+  ss.href = "//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css";
+  document.getElementsByTagName("head")[0].appendChild(ss);
+
+  var script = document.createElement( 'script' );
+  script.type = 'text/javascript';
+  script.src = '//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js';
+  document.body.appendChild(script);
+
+  window.onload = function() {
+    Array.prototype.forEach.call(
+      document.getElementsByClassName("math"),
+      function(el) {
+        try {
+          katex.render(el.innerHTML, el, { displayMode: true });
+        } catch (e) { console.log(e); }
+      }
+    );
+  }
+}
+</script>
+
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'https://mnml.curiositry.com/assets/css/defer.css?v=f34d8c5386';
+        var h = document.getElementsByTagName('head')[0];
+        h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+
+    <script async src="/assets/js/index.js?v=f34d8c5386"></script>
+    <script defer src="/assets/js/prism.min.js?v=f34d8c5386"></script>
+
+</body>
+</html>

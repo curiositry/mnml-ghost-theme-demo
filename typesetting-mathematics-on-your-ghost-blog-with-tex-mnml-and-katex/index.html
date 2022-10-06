@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Typesetting Mathematics on your Ghost Blog with KaTeX — mnml, a ghost blog theme</title>
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css?v=f34d8c5386" />
+
+<!-- For speed, I’ve added the response from this link straight into defer.css-->
+<!--<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Serif+Pro:400,700/Source+Sans+Pro:400,900,400i,900i/Alegreya:400i,700i">-->
+
+    <link rel="canonical" href="http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/amp/" />
+    
+    <meta property="og:site_name" content="mnml, a ghost blog theme" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Typesetting Mathematics on your Ghost Blog with KaTeX" />
+    <meta property="og:description" content="In the third version of the MNML theme, I added the ability to use mathematics in your blog posts.  The math is typeset using Khan Academy’s KaTeX library, which claims to be the fastest math typesetting library for the web. Additionally, the MNML theme only loads KaTeX if it" />
+    <meta property="og:url" content="http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/" />
+    <meta property="og:image" content="https://katex.org/img/og_logo.png" />
+    <meta property="article:published_time" content="2019-09-05T02:42:00.000Z" />
+    <meta property="article:modified_time" content="2019-09-06T23:50:34.000Z" />
+    <meta property="article:tag" content="ghost" />
+    <meta property="article:tag" content="math" />
+    <meta property="article:tag" content="latex" />
+    <meta property="article:tag" content="katex" />
+    <meta property="article:tag" content="tex" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Typesetting Mathematics on your Ghost Blog with KaTeX" />
+    <meta name="twitter:description" content="In the third version of the MNML theme, I added the ability to use mathematics in your blog posts.  The math is typeset using Khan Academy’s KaTeX library, which claims to be the fastest math typesetting library for the web. Additionally, the MNML theme only loads KaTeX if it" />
+    <meta name="twitter:url" content="http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/" />
+    <meta name="twitter:image" content="https://katex.org/img/og_logo.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Curiositry" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="ghost, math, latex, katex, tex" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "mnml, a ghost blog theme",
+        "logo": "http://mnml.herokuapp.com/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Curiositry",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://cdn.autodidacts.io/img/gravatar.png",
+            "width": 500,
+            "height": 500
+        },
+        "url": "http://mnml.herokuapp.com/author/curiositry/",
+        "sameAs": [
+            "http://curiositry.github.io"
+        ],
+        "description": "An autodidact who crafts code + content for the web."
+    },
+    "headline": "Typesetting Mathematics on your Ghost Blog with KaTeX",
+    "url": "http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/",
+    "datePublished": "2019-09-05T02:42:00.000Z",
+    "dateModified": "2019-09-06T23:50:34.000Z",
+    "image": "https://katex.org/img/og_logo.png",
+    "keywords": "ghost, math, latex, katex, tex",
+    "description": "In the third version of the MNML theme, I added the ability to use mathematics in your blog posts.  The math is typeset using Khan Academy’s KaTeX library, which claims to be the fastest math typesetting library for the web. Additionally, the MNML theme only loads KaTeX if it",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://mnml.herokuapp.com"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.11" />
+    <link rel="alternate" type="application/rss+xml" title="mnml, a ghost blog theme" href="http://mnml.herokuapp.com/rss/rss.xml" />
+    <style>
+
+</style>
+</head>
+<body class="post-template tag-ghost-tag-2 tag-math tag-latex tag-katex tag-tex" id="body">
+
+    
+
+<div class="main-header--content main-nav--content clearfix">
+  <a href="http://mnml.herokuapp.com">
+    <h3><span class="back-arrow">← </span>mnml, a ghost blog theme</h3>
+  </a>
+</div>
+
+<main class="content">
+
+    <article class="post tag-ghost-tag-2 tag-math tag-latex tag-katex tag-tex">
+
+        <header class="post-header">
+            <h1 class="post-title typl8-gamma">Typesetting Mathematics on your Blog</h1>
+            <section class="post-meta">
+                By <a href="/author/curiositry/">Curiositry</a>
+                <time class="post-date" datetime="2019-09-05"> Sep 5th 2019</time>
+                <span class="post-tags">Tags: <a href="/tag/ghost-tag-2/">ghost</a>, <a href="/tag/math/">math</a>, <a href="/tag/latex/">latex</a>, <a href="/tag/katex/">katex</a>, <a href="/tag/tex/">tex</a></span>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>In the third version of the MNML theme, I added the ability to use mathematics in your blog posts. </p>
+
+<p>The math is typeset using Khan Academy’s <a href="http://khan.github.io/KaTeX/">KaTeX</a> library, which claims to be <em>the fastest math typesetting library for the web</em>. Additionally, the MNML theme only loads KaTeX if it detects mathematics on the page that need to be rendered. Here’s how you can start using math in your posts.</p>
+
+<p><img src="https://katex.org/img/og_logo.png" alt="KaTeX Logo" /></p>
+
+<h3 id="thetexmathtypesettingstandard">The TeX Math Typesetting Standard</h3>
+
+<p>KaTeX typesets math using the <a href="http://en.wikipedia.org/wiki/TeX">TeX</a> syntax. TeX is a typesetting that was created by Donald Knuth <em>36 years ago</em>. However, it is still widely used, and it has been noted as “… one of the most sophisticated digital typographical systems in the world.” <sup><a href="http://iclass.iuea.ac.ug/intranet/E-books/ICT-COLLECTION/Other/O%27Reilly%20Fonts%20&amp;%20Encodings.pdf">1</a></sup></p>
+
+<p>TeX is popular in academia, especially in mathematics, as well as computer science,  engineering, physics, and other disiplines.</p>
+
+<p>Including KaTeX in the mnml theme will allow the scientifically inclined to typeset math in the way they are used to, but from the comfort of their own blog.</p>
+
+<p>If you’re not familiar with Tex, but would like to use math on your blog, take a look at this handy <a href="refcards.com/docs/silvermanj/tex/tex-refcard-a4.pdf">cheatsheet (.pdf)</a></p>
+
+<h3 id="thesyntax">The Syntax</h3>
+
+<p>To use Tex math on your blog, use the following syntax:</p>
+
+<pre><code class="language-html">&lt;section class="math"&gt;TEX EQUATION HERE&lt;/section&gt;  
+</code></pre>
+
+<p>KaTeX will look for any element with the class <code>math</code>, and typeset its contents. I <strong>highly recommend</strong> using the <code>&lt;section&gt;</code> element for your math, as it formats correctly. If you use non-block-level elements, like spans, Ghost will convert your math to Markdown <em>before</em> KaTeX typesets it, which causes all kind of problems. (Example: Tex subscript will be parsed as Markdown italics).</p>
+
+<p>Thus, this expression:  </p>
+
+<pre><code>&lt;section class="math"&gt; \pi = {c \over d}&lt;/section&gt;  
+</code></pre>
+
+<p>… will be rendered by KaTeX like this:</p>
+
+<section class="math">\pi = {c \over d}</section>
+
+<p>Looks mighty fine. What about something more complicated? Try the forumla for standard deviation:</p>
+
+<section class="math">  
+s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2}  
+</section>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>That’s it! The Mnml theme makes it easy for scientists to expound their knowledge … beautifully. </p>
+
+<p>If you don’t plan on using math on your blog, you can disable KaTeX by changing <code>{{&gt;katex}}</code> to <code>{{!&gt;katex}}</code> on line 60 of <code>default.hbs</code>, but since it’s loaded conditionally, you don’t really need to. </p>
+
+<p>Let’s finish of with <a href="http://automathic.org/151_uncertainty-relation">Heisenbergs uncertainty relation</a>:</p>
+
+<section class="math">  
+\Delta p \Delta x \geq {h \over 4 \pi}
+</section>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="/author/curiositry/" style="background-image: url(http://cdn.autodidacts.io/img/gravatar.png)"><span class="hidden">Curiositry's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="/author/curiositry/">Curiositry</a></h4>
+
+                    <p>An autodidact who crafts code + content for the web.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Canada</span>
+                    <span class="author-link icon-link"><a href="http://curiositry.github.io">http://curiositry.github.io</a></span>
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Typesetting%20Mathematics%20on%20your%20Blog&amp;url=http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://mnml.herokuapp.com/typesetting-mathematics-on-your-ghost-blog-with-tex-mnml-and-katex/"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+    <!--
+    If you want Disqus comments, uncomment this. Make sure to set your disqus shortname in partials/comments.hbs first!
+     -->
+    </article>
+</main>
+
+
+    <footer class="site-footer">
+  <a class="rss-icon icon-feed" href="http://mnml.herokuapp.com/rss/rss.xml">
+   <span class="tooltip sans-serif">Subscribe!</span>
+  </a>
+<!--  Uncomment if you want a copy of your navigation in the footer. It’s pretty cool, and gives your visitors something to do when they finish an article other than commenting, sharing, or closing the tab.    -->
+  <nav>
+    <ul class="nav">
+    <li class="nav-home" role="presentation">
+      <a href="http://mnml.herokuapp.com/">Home</a>
+    </li>
+    <li class="nav-about" role="presentation">
+      <a href="http://mnml.herokuapp.com/about/">About</a>
+    </li>
+    <li class="nav-get-the-theme" role="presentation">
+      <a href="http://github.com/curiositry/mnml-ghost-theme">Get the Theme</a>
+    </li>
+    <li class="nav-contact" role="presentation">
+      <a href="http://mnml.herokuapp.com/contact/">Contact</a>
+    </li>
+</ul>
+
+  </nav>
+  <div class="site-footer__attribution">
+    <span class="print-data copyright-notice">
+      &copy; 2022
+      <a href="http://mnml.herokuapp.com/">mnml, a ghost blog theme</a>
+      &nbsp;&bull;&nbsp;
+    </span>
+
+    <span>
+      <a href="http://github.com/curiositry/mnml-ghost-theme">MNML</a>
+      theme by
+      <a href="http://curiositry.github.io">Curiositry</a>
+    </span>
+
+    <span>
+      &nbsp;&bull;&nbsp;
+      Published with
+      <a href="https://ghost.org">
+        &nbsp;<span class="icon-ghost typl8-zeta"></span> Ghost
+      </a>
+    </span>
+  </div>
+</footer>
+
+    <!--
+    This generates a handsome modal menu and hamburger icon. If you want to use it, edit     menu.hbs and add your links (line ~146), then remove the ! from this helper to           activate it.
+    -->
+      <!--
+THE MENU: Enabling this partial creates a hamburger icon that opens a menu. It’s responsive, lightweight, and works with javascript disabled.
+-->
+
+
+<!-- Trigger element, which is hidden -->
+<input type="checkbox" id="menu-trigger" />
+
+<!-- Thus label which control the trigger. The hamburger icon is a background image in      the CSS (base64 encoded svg) in main.css. Hover and close states in defer.css-->
+<label for="menu-trigger" id="open-menu" class="open-menu btn"></label>
+
+<!-- The menu that slides in. Styles in defer.css -->
+<nav class="menu" id="menu">
+  <ul class="nav">
+    <li class="nav-home" role="presentation">
+      <a href="http://mnml.herokuapp.com/">Home</a>
+    </li>
+    <li class="nav-about" role="presentation">
+      <a href="http://mnml.herokuapp.com/about/">About</a>
+    </li>
+    <li class="nav-get-the-theme" role="presentation">
+      <a href="http://github.com/curiositry/mnml-ghost-theme">Get the Theme</a>
+    </li>
+    <li class="nav-contact" role="presentation">
+      <a href="http://mnml.herokuapp.com/contact/">Contact</a>
+    </li>
+</ul>
+
+</nav>
+
+<!--
+This makes the rest of the page move down with the menu for style points, but is              optional. The menu works fine with pure css.
+-->
+<script>
+  var navTrigger = document.getElementById("menu-trigger");
+  var menu = document.getElementById("menu");
+  var bodyTag = document.getElementsByTagName("body")[0];
+
+
+navTrigger.onclick = function () {
+  if(navTrigger.checked){
+    bodyTag.classList.add("menu-transition");
+    document.getElementsByTagName("body")[0].style.marginTop = menu.clientHeight+"px";
+  }else{
+    bodyTag.classList.add("menu-transition");
+    document.getElementsByTagName("body")[0].style.marginTop = "0";
+  }
+}
+</script>
+
+
+    <!-- Ghost outputs important scripts and data with this tag -->
+    <script>
+document.querySelector(".site-footer__attribution a[href='https://ghost.org']").href = "https://ghost.org?via=curiositry";
+document.querySelector(".site-footer__attribution a[href='https://ghost.org?via=curiositry']").outerHTML += "<b>*</b>";
+
+document.querySelector(".site-footer__attribution").innerHTML += "<br><div style='margin-top:2rem;'><b>*</b> affiliate link</div>";
+</script>
+
+    <!--
+    This loads katex.hbs in; if a page has anything with the class .math, katex.hbs           loads Khan Academy’s Tex math typesetting library and runs it on the content.
+
+    If you don’t want to use KaTeX, comment this out.
+    -->
+    <script type="text/javascript">
+var mathAreas = document.getElementsByClassName("math");
+if (mathAreas){
+  var ss = document.createElement("link");
+  ss.type = "text/css";
+  ss.rel = "stylesheet";
+  ss.href = "//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css";
+  document.getElementsByTagName("head")[0].appendChild(ss);
+
+  var script = document.createElement( 'script' );
+  script.type = 'text/javascript';
+  script.src = '//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js';
+  document.body.appendChild(script);
+
+  window.onload = function() {
+    Array.prototype.forEach.call(
+      document.getElementsByClassName("math"),
+      function(el) {
+        try {
+          katex.render(el.innerHTML, el, { displayMode: true });
+        } catch (e) { console.log(e); }
+      }
+    );
+  }
+}
+</script>
+
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'https://mnml.curiositry.com/assets/css/defer.css?v=f34d8c5386';
+        var h = document.getElementsByTagName('head')[0];
+        h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+
+    <script async src="/assets/js/index.js?v=f34d8c5386"></script>
+    <script defer src="/assets/js/prism.min.js?v=f34d8c5386"></script>
+
+</body>
+</html>
